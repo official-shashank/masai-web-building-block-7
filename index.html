@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Responsive Images with Picture Element</h2>
+        
+        <picture>
+           
+            <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ueD2qKJmW2ae4XyhMMB5XehLbI5xhq_YKg&s" media="(min-width: 1200px)" type="image/jpeg">
+            
+  
+            <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ueD2qKJmW2ae4XyhMMB5XehLbI5xhq_YKg&s" media="(min-width: 768px)" type="image/jpeg">
+            
+           
+            <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ueD2qKJmW2ae4XyhMMB5XehLbI5xhq_YKg&s" media="(max-width: 767px)" type="image/jpeg">
+            
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ueD2qKJmW2ae4XyhMMB5XehLbI5xhq_YKg&s" alt="Responsive Image Example">
+        </picture>
+        
+        <p>This image changes based on the screen size and resolution of the device.</p>
+    </div>
+</body>
+</html>
